@@ -24,12 +24,12 @@ func Init() error {
 	return nil
 }
 
-func GetDB() *gorm.DB {
+func GetSQLite() *gorm.DB {
 	return db
 }
 
 func GetLogger(p string) *Logger {
-	//Initialize Logger
+	// Initialize Logger
 	logger = NewLogger(p)
 	return logger
 }
